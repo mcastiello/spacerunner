@@ -82,6 +82,7 @@ const AlienShip = (() => {
 
             // Check randomly if the ship should change direction.
             if (dataMap.get(this).changeCounter === 10) {
+                // Trying to slightly randomize the ship behaviour.
                 if (Math.round(Math.random() * 10000) % steer === 0) {
                     dataMap.get(this).direction *= -1;
                 }
